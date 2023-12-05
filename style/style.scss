@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gluten", sans-serif;
+  transition: 0.3s;
+  user-select: none;
+}
+:root {
+  --oq: #1e1e1e;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  cursor: url("../img/cursor.svg") 20 20, auto;
+}
+body {
+  background: linear-gradient(90deg, rgba(251, 237, 174, 0.31), #c3dbc838);
+  background-image: url("../img/Screenshot\ 2023-12-03\ 143707.png");
+  background-size: contain;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 103.6rem;
+}
+h2 {
+  color: var(--oq);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+// start header
+header {
+  height: 77.9rem;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav {
+  padding: 5rem 0;
+  .container {
+    img {
+      width: 50%;
+    }
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+      color: var(--oq);
+      font-size: 2.4rem;
+      font-weight: 300;
+      line-height: 150%;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.hero {
+  margin-top: 9rem;
+  .container {
+    img {
+      width: 100%;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > div {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h1 {
+        color: var(--oq);
+        font-size: 7.1rem;
+        font-weight: 200;
+        line-height: 150%;
+        letter-spacing: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+      h3 {
+        color: var(--oq);
+        text-align: right;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+  }
+}
+// stop header
+
+// start main
+.natijalarimiz {
+  .container {
+    height: 60rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    img {
+      width: 90%;
+    }
+    ul {
+      margin-top: 7rem;
+      li {
+        list-style: none;
+        margin: 2rem auto;
+        color: var(--oq);
+        font-size: 1.7rem;
+        font-weight: 500;
+        line-height: 142%;
+      }
+    }
+  }
+}
+// start sabab
+.sabab {
+  img {
+    width: 90%;
+  }
+  h2 {
+    margin: 0 auto;
+    max-width: 65.6rem;
+    text-align: center;
+    padding: 9rem 0;
+  }
+  .container {
+    margin: 5rem auto;
+    display: flex;
+    .cards {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .card {
+        margin: 2rem 0;
+        width: 90%;
+        padding: 3rem;
+        border-radius: 3rem;
+        &:hover {
+          transform: scale(1.04);
+        }
+        p {
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: 400;
+          line-height: 150%;
+          letter-spacing: -0.0198rem;
+        }
+      }
+    }
+    .img {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.card1 {
+  background-color: #a5d114;
+}
+.card2 {
+  background-color: #2db260;
+}
+.card3 {
+  background-color: #aa28a8;
+}
+.card4 {
+  background-color: #f280bd;
+}
+.card5 {
+  background-color: #837676;
+}
+.card6 {
+  background-color: #837676;
+}
+// stop sabab
+// start xaridorlarimiz
+.xaridorlarimiz {
+  margin: 30rem 0;
+  h2 {
+    zoom: 1.2;
+    transform: translateX(-10rem);
+    margin-bottom: 5rem;
+  }
+  .container {
+    zoom: 0.8;
+    .photos {
+      padding: 5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      row-gap: 4rem;
+      img {
+        width: 30%;
+      }
+      img:hover {
+        transform: scale(2);
+      }
+    }
+    a {
+      margin-top: 5rem;
+      width: 100%;
+      border-radius: 5rem;
+      display: inline-block;
+      text-align: center;
+      padding: 1rem;
+      background: rgba(224, 181, 112, 0.889);
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 200;
+      line-height: 150%;
+      letter-spacing: -0.0198rem;
+      text-decoration: none;
+      &:hover {
+        background: rgba(234, 149, 13, 0.889);
+      }
+    }
+  }
+}
+// stop xaridorlarimiz
+// stop main
+// footer start
+
+footer {
+  background-image: url("../img/istockphoto-1173556266-2048x2048-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border: 1px solid transparent;
+  .container {
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10rem;
+      .card {
+        margin: 0 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15rem 0;
+        .img {
+          border: 1px solid black;
+          width: 15.7rem;
+          height: 15.7rem;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 2rem;
+          &:hover {
+            img {
+              transform: scale(2);
+            }
+          }
+        }
+        a {
+          color: var(--oq);
+          font-size: 2.4rem;
+          font-weight: 300;
+          line-height: 150%;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+// footer stop
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media screen and (max-width: 1087px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 987px) {
+  html {
+    font-size: 45%;
+  }
+  footer img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 890px) {
+  html {
+    font-size: 40%;
+  }
+  li,
+  p {
+    font-size: 2rem !important;
+  }
+  .xaridorlarimiz img:hover {
+    transform: scale(1) !important;
+  }
+  footer .img:hover img {
+    transform: scale(1) !important;
+  }
+}
+@media screen and (max-width: 796px) {
+  html {
+    font-size: 35%;
+  }
+  .sabab p{
+    font-size: 2.4rem !important;
+  }
+}
+@media screen and (max-width: 695px) {
+  // nav
+  nav {
+    padding: 5rem 0;
+    .container {
+      margin: 0 2rem;
+    }
+  }
+  // hero
+  .hero {
+    margin-top: 0rem;
+    .container {
+      margin: 0 4rem;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h3{
+        text-align: center !important;
+      }
+      gap: 4rem;
+      &>div:nth-child(1){
+        align-items: center;
+      }
+    }
+  }
+  // NATIHJALARIMIZ
+  .natijalarimiz .container {
+    height: 80rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    .img{
+      display: flex;
+      align-items: center;
+      justify-content:center;
+      padding: 2rem;
+    }
+    img{
+      width: 60%;
+    }
+  }
+  // sabablar
+  .sabab {
+    img {
+      width: 40%;
+    }
+    .container {
+      justify-content: center;
+      flex-direction: column;
+      &:nth-child(3) {
+        flex-direction: column-reverse;
+      }
+      .cards {
+        width: 100%;
+      }
+      .img {
+        width: 100%;
+      }
+    }
+  }
+  // natijalarimiz
+  .xaridorlarimiz {
+    h2 {
+      transform: translateX(0rem);
+    }
+    .container {
+      margin: 0 3rem;
+      .photos {
+        padding: 5rem 0;
+        img {
+          width: 48%;
+          height: 48%;
+        }
+      }
+      a {
+        padding: 3rem;
+        font-size: 3rem;
+      }
+    }
+  }
+  // footer
+  footer {
+    background-size: 100%;
+    .container {
+      .links {
+        margin: 10rem auto;
+        justify-content: center;
+        gap: 5rem;
+        .card {
+          flex-direction: column;
+          margin: 0;
+          .img {
+            width: 10rem;
+            height: 10rem;
+          }
+          a {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .natijalarimiz .container ul li{
+    font-size: 2.4rem !important;
+  }
+  .sabab .container h2{
+    min-width: 100% !important;
+  }
+  .hero h1{
+    font-size: 4rem !important;
+  }
+  .hero h3{
+    font-size: 2rem;
+  }
+}
