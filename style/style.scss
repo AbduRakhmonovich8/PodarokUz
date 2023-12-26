@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Gluten", sans-serif;
   transition: 0.3s;
@@ -10,17 +11,23 @@
 :root {
   --oq: #1e1e1e;
 }
+
+
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   cursor: url("../img/cursor.svg") 20 20, auto;
 }
 body {
+  -webkit-font-smoothing: antialiased;
   background: linear-gradient(90deg, rgba(251, 237, 174, 0.31), #c3dbc838);
   background-image: url("../img/Screenshot\ 2023-12-03\ 143707.png");
   background-size: contain;
 }
-
+a:hover{
+  cursor: url("../img/cursor.svg") 20 20, auto;
+}
 .container {
   margin: 0 auto;
   max-width: 103.6rem;
@@ -258,6 +265,7 @@ footer {
           display: flex;
           align-items: center;
           justify-content: center;
+          overflow: hidden;
           margin-bottom: 2rem;
           &:hover {
             img {
@@ -279,8 +287,34 @@ footer {
     }
   }
 }
+// @keyframes block {
+//   1%{
+//     display: block;
+//   }
+// }
+.r_hide{
+  transition: 1s all;
+}
+.l_hide{
+  transition: 1s all;
+}
+.u_hide{
+  transition: 1s all;
+}
 // footer stop
-
+.section__hidden{
+  opacity: 0 !important;
+  transform: translateX(4rem) !important;
+}
+.section__hiddenl{
+  opacity: 0 !important;
+  transform: translateX(-4rem) !important;
+}
+.section__hiddenu{
+  opacity: 0 !important;
+  transform: translateY(-4rem) !important;
+}
+ 
 @media screen and (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -438,4 +472,9 @@ footer {
   .hero h3{
     font-size: 2rem;
   }
+}
+
+section{
+  -webkit-megic: always;
+  -moz-megic: always;
 }

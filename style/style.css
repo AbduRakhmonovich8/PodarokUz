@@ -21,9 +21,14 @@ html {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
   background: linear-gradient(90deg, rgba(251, 237, 174, 0.31), rgba(195, 219, 200, 0.2196078431));
   background-image: url("../img/Screenshot 2023-12-03 143707.png");
   background-size: contain;
+}
+
+a:hover {
+  cursor: url("../img/cursor.svg") 20 20, auto;
 }
 
 .container {
@@ -263,6 +268,7 @@ footer .container .links .card .img {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
   margin-bottom: 2rem;
 }
 footer .container .links .card .img:hover img {
@@ -277,6 +283,33 @@ footer .container .links .card a {
 }
 footer .container .links .card a:hover {
   text-decoration: underline;
+}
+
+.r_hide {
+  transition: 1s all;
+}
+
+.l_hide {
+  transition: 1s all;
+}
+
+.u_hide {
+  transition: 1s all;
+}
+
+.section__hidden {
+  opacity: 0 !important;
+  transform: translateX(4rem) !important;
+}
+
+.section__hiddenl {
+  opacity: 0 !important;
+  transform: translateX(-4rem) !important;
+}
+
+.section__hiddenu {
+  opacity: 0 !important;
+  transform: translateY(-4rem) !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -424,4 +457,8 @@ footer .container .links .card a:hover {
   .hero h3 {
     font-size: 2rem;
   }
+}
+section {
+  -webkit-megic: always;
+  -moz-megic: always;
 }/*# sourceMappingURL=style.css.map */
